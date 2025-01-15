@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 
 
@@ -10,7 +11,7 @@ export default function Home() {
 
 
         <div className="imageContainer">
-          <img src="/images/AI.jfif" alt="Artificial Intelligence" className="imgSize" />
+          <Image src="/images/AI.jfif" alt="Artificial Intelligence" className="ImageSize" />
         </div>
         <h1 className="title"> Artificial Intelligence (AI) and Machine Learning (ML) </h1>
         <p className="description">
@@ -20,7 +21,7 @@ export default function Home() {
       </div>
       <div className="childContainer">
         <div className="imageContainer">
-          <img src="/images/Cs.jfif" alt="Cybersecurity" className="imgSize" />
+          <Image src="/images/Cs.jfif" alt="Cybersecurity" className="ImageSize" />
         </div>
         <h1 className="title"> Cybersecurity </h1>
         <p className="description">
@@ -31,7 +32,7 @@ Zero Trust Architecture: A security model that requires strict identity verifica
       </div>
       <div className="childContainer">
         <div className="imageContainer">
-          <img src="/images/BCW2.jfif" alt="Blockchain" className="imgSize" />
+          <Image src="/images/BCW2.jfif" alt="Blockchain" className="ImageSize" />
         </div>
         <h1 className="title"> Blockchain and Web3 Technologies </h1>
         <p className="description">
@@ -42,7 +43,7 @@ Smart Contracts: Self-executing contracts with terms written
       </div>
       <div className="childContainer">
         <div className="imageContainer">
-          <img src="/images/CC2.jfif" alt="Cloud Computing" className="imgSize" />
+          <Image src="/images/CC2.jfif" alt="Cloud Computing" className="ImageSize" />
         </div>
         <h1 className="title"> Cloud Computing and Edge Computing </h1>
         <p className="description">
@@ -53,7 +54,7 @@ Hybrid Cloud Solutions: Combine private and public cloud
       </div>
       <div className="childContainer">
         <div className="imageContainer">
-          <img src="/images/QC.jfif" alt="Quantum Computing" className="imgSize" />
+          <Image src="/images/QC.jfif" alt="Quantum Computing" className="ImageSize" />
         </div>
         <h1 className="title"> Quantum Computing </h1>
         <p className="description">
@@ -64,7 +65,7 @@ Applications: Expected to revolutionize areas like cryptography, materials scien
       </div>
       <div className="childContainer">
         <div className="imageContainer">
-          <img src="/images/ER.jfif" alt="Extended Reality" className="imgSize" />
+          <Image src="/images/ER.jfif" alt="Extended Reality" className="ImageSize" />
         </div>
         <h1 className="title"> Extended Reality (XR) — AR, VR, and MR </h1>
         <p className="description">
