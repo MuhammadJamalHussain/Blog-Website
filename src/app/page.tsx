@@ -1,101 +1,78 @@
-import Image from "next/image";
+import Link from "next/link";
+
+
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  <div className="parentContainer">
+      <div className="childContainer">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+        <div className="imageContainer">
+          <img src="/images/AI.jfif" alt="Artificial Intelligence" className="imgSize" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <h1 className="title"> Artificial Intelligence (AI) and Machine Learning (ML) </h1>
+        <p className="description">
+        Applications: Used in industries like healthcare (diagnostics), finance (fraud detection), retail (personalized recommendations), and more.
+        </p>
+        <button className="readMore"><Link href="/blog/blog1">Read More</Link></button>
+      </div>
+      <div className="childContainer">
+        <div className="imageContainer">
+          <img src="/images/Cs.jfif" alt="Cybersecurity" className="imgSize" />
+        </div>
+        <h1 className="title"> Cybersecurity </h1>
+        <p className="description">
+        Threat Detection: Uses AI to identify unusual activities and detect potential cyber threats in real-time.
+Zero Trust Architecture: A security model that requires strict identity verification for every person and device attempting
+        </p>
+        <button className="readMore"><Link href="/blog/blog2">Read More</Link></button>
+      </div>
+      <div className="childContainer">
+        <div className="imageContainer">
+          <img src="/images/BCW2.jfif" alt="Blockchain" className="imgSize" />
+        </div>
+        <h1 className="title"> Blockchain and Web3 Technologies </h1>
+        <p className="description">
+        Decentralized Finance (DeFi): Uses blockchain to offer financial services without traditional intermediaries like banks.
+Smart Contracts: Self-executing contracts with terms written
+        </p>
+        <button className="readMore"><Link href="/blog/blog3">Read More</Link></button>
+      </div>
+      <div className="childContainer">
+        <div className="imageContainer">
+          <img src="/images/CC2.jfif" alt="Cloud Computing" className="imgSize" />
+        </div>
+        <h1 className="title"> Cloud Computing and Edge Computing </h1>
+        <p className="description">
+        Cloud Services: Includes Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).
+Hybrid Cloud Solutions: Combine private and public cloud
+        </p>
+        <button className="readMore"><Link href="/blog/blog4">Read More</Link></button>
+      </div>
+      <div className="childContainer">
+        <div className="imageContainer">
+          <img src="/images/QC.jfif" alt="Quantum Computing" className="imgSize" />
+        </div>
+        <h1 className="title"> Quantum Computing </h1>
+        <p className="description">
+        Qubits: Uses quantum bits (qubits) that can represent multiple states simultaneously, unlike classical binary bits.
+Applications: Expected to revolutionize areas like cryptography, materials science, pharmaceuticals, and logistics.
+        </p>
+        <button className="readMore"><Link href="/blog/blog5">Read More</Link></button>
+      </div>
+      <div className="childContainer">
+        <div className="imageContainer">
+          <img src="/images/ER.jfif" alt="Extended Reality" className="imgSize" />
+        </div>
+        <h1 className="title"> Extended Reality (XR) — AR, VR, and MR </h1>
+        <p className="description">
+        Augmented Reality (AR): Enhances the real-world environment with digital overlays, used in apps like Pokémon Go and industrial training tools.
+Virtual Reality (VR): Provides immersive digital experiences,
+        </p>
+        <button className="readMore"><Link href="/blog/blog6">Read More</Link></button>
+      </div>
     </div>
   );
 }
